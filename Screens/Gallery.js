@@ -6,6 +6,7 @@ const Gallery = () => {
 
     useEffect(() => {
         (async () => {
+            console.log('ASDLAJSDKAJSDKJASD');
             const permissions = await MediaLibrary.requestPermissionsAsync();
             if (permissions.status === 'granted') {
                 const media = await MediaLibrary.getAssetsAsync({ first: 50 });
